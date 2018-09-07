@@ -1,8 +1,7 @@
-
 public class Personality {
 	
 	private String myName;
-	
+		
 	/**
 	 * Construct a Personality object with a name
 	 * @param name is used as the identifier for this object
@@ -10,6 +9,7 @@ public class Personality {
 	
 	public Personality(String name) {
 		// TODO: complete constructor
+		myName = name;
 	}
 	
 	/**
@@ -26,8 +26,9 @@ public class Personality {
 	 * @return this objects identifying String/label
 	 */
 	public String getName() {
+		
 		// TODO: complete this method
-		return "ola";
+		return myName;
 	}
 	
 	/**
@@ -37,6 +38,9 @@ public class Personality {
 	 */
 	
 	public String getDescription() {
+		if(myName.length() > 4) {
+			return "argumentative";
+		}
 		return "playful";
 	}
 }
